@@ -16,7 +16,10 @@ def my_slice(a_list,start,stop,step=1):
     list = [0,10,20,30,40,50]
 
     print(list)
-   
+
+def make_multiplication_table(number):
+    for i in range(number):
+        print(*[j*i for j in range(number)], sep="\t")
 
     
 
@@ -30,5 +33,7 @@ def main():
 
     a_list=[]
     my_slice(a_list,2,4)
+
+    make_multiplication_table(10)
 
 main()
