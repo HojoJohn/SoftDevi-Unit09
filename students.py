@@ -59,5 +59,7 @@ def main():
     charlie = get_student(population,"cb1234")
     print("charlie", charlie)
 
+    count_words()
+
 
 main()
