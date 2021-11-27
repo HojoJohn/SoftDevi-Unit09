@@ -20,8 +20,17 @@ def make_pack(filename):
 
 
 def build_basic_database(function):
+    collection = []
     function = make_pack()
+    count = 0
 
+    for i in range(len(function)):
+        collection.append(function[i])
+        count += 1
+    return count
+    
+def build_counting_collection(function):
+    function = make_pack()
 def main():
 
     # make_database("data/pokemon.csv")
