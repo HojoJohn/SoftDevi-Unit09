@@ -31,10 +31,25 @@ def build_basic_database(function):
     
 def build_counting_collection(function):
     function = make_pack()
-def main():
+    pokemon = {}
 
+    while len(pokemon) == 102:
+        for  i in range(len(function)):
+            pokemon.append(function[i])
+    return pokemon
+
+
+def main():
+    print("Cards in database:0", 102)
     # make_database("data/pokemon.csv")
     # print(make_database)
+    print("Cards in pack: ")
     print(make_pack("data/pokemon.csv"))
+
+    build_basic_database(make_pack)
+    
+    build_counting_collection(make_pack)
+
+
 
 main()
